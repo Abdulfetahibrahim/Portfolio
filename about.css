@@ -1,0 +1,57 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.about .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about .div {
+  width: 380px;
+  height: 320px;
+  padding: 20px;
+  border-radius: 18px;
+  color: var(--white);
+  background: var(--gray);
+  box-shadow: 0.5px 1px 5px var(--black);
+  transition: all 0.3s ease;
+}
+
+.about .div:hover {
+  transform: scale(1.05);
+}
+
+.about .grided {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.about button {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--gradient);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.about .body {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .about .grided {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .div {
+    width: 320px;
+    height: 320px;
+  }
+}
